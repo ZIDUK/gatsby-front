@@ -28,7 +28,10 @@ const Article = ({ data }) => {
         <div
           id="banner"
           className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-          data-src={"http://localhost:1337" + article.image[0].url}
+         // data-src={"http://localhost:1337" + article.image[0].url}
+         // data-src={`${process.env.IMAGE_BASE_URL}${article.image[0].url}`? `https://strapi-mongod.herokuapp.com${article.image[0].url}`: "http://localhost:1337" + article.image[0].url}
+         // data-src={"https://strapi-mongod.herokuapp.com" + article.image[0].url}
+          data-src={article.image[0].url}
           data-srcset={"http://localhost:1337" + article.image[0].url}
           data-uk-img
         >

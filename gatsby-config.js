@@ -16,10 +16,10 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
     options: {
-
-      apiURL: process.env.DEPLOY_URL
+     /* apiURL: process.env.DEPLOY_URL
       ? `https://strapi-mongod.herokuapp.com`
-      : `http://localhost:1337`,
+      : `http://localhost:1337`,*/
+      apiURL: `https://strapi-mongod.herokuapp.com`,
       queryLimit: 1000, // Default to 100
       contentTypes: [`article`, `category`],
 

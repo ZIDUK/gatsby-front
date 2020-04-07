@@ -10,7 +10,8 @@ const Card = ({ article }) => {
       <div className="uk-card uk-card-muted">
         <div className="uk-card-media-top">
           <img
-            src={"http://localhost:1337" + article.node.image[0].url}
+           // src={"http://localhost:1337" + article.node.image[0].url}
+            src={article.node.image[0].url}
             alt={"http://localhost:1337" + article.node.image[0].url}
 
             height="100"

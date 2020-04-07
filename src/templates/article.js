@@ -7,7 +7,7 @@ import Moment from "react-moment"
 import Layout from "../components/layout"
 
 export const query = graphql`
-  query ArticleQuery($id: Int!) {
+  query ArticleQuery($id: Int) {
     strapiArticle(strapiId: { eq: $id }) {
       strapiId
       title
